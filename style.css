@@ -1,0 +1,75 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+    background-color: #e0e5ec;
+}
+.light {
+	display: flex;
+	width: 980px;
+	height: 300px;
+	align-items: center;
+	justify-content: space-around;
+    margin-top: 100px;
+}
+.circle {
+	position: relative;
+	display: flex;
+	width: 150px;
+	height: 150px;
+	border-radius: 150px;
+	align-items: center;
+	justify-content: center;
+}
+.circle:before {
+	position: absolute;
+	display: block;
+	width: 150px;
+	height: 150px;
+	content: " ";
+	cursor: pointer;
+	transition: 0.3s ease-out;
+	border-radius: 150px;
+	filter: blur(7px);
+    box-shadow: 8px 8px 20px #a9a8b7, -8px -8px 20px #fff;
+}
+.circle:hover:before {
+	box-shadow: 8px 8px 20px #a9a8b7, -8px -8px 20px #fff,
+		inset -8px -8px 20px #fff, inset 8px 8px 20px #a9a8b7;
+    transition: 0.3s ease-in;
+    transform: scale(1.05);
+}
+.light .btn_1, .btn_2, .btn_3 {
+    text-decoration: none;
+    font-family: 'Rubik Moonrocks';
+    color: rgb(139, 139, 139);
+    font-size: 65px;
+}
+.light .btn_1:hover{
+    color: rgb(116, 157, 229);
+    text-shadow: rgb(184, 209, 252) 1px 0 10px;
+    transition: 0.3s ease-in;
+    transform: scale(1.05);
+}
+.light .btn_2:hover{
+    color: rgb(229, 116, 193);
+    text-shadow: rgb(252, 195, 234) 1px 0 10px;
+    transition: 0.3s ease-in;
+    transform: scale(1.05);
+}
+.light .btn_3:hover{
+    color: rgb(235, 165, 14);
+    text-shadow: rgb(253, 219, 145) 1px 0 10px;
+    transition: 0.3s ease-in;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
